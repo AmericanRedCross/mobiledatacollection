@@ -1,4 +1,4 @@
-Haiti GIS Training
+Mobile Data Collection
 ==================
 
-Haiti GIS Training Materials
+Mobile Data Collection Training Materials
