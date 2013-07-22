@@ -6127,6 +6127,7 @@ a.badge:focus {
   color: #fff;
   background: #eee url(../img/theboys.jpg);
   background-size: cover;
+  min-height: 150px;
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
