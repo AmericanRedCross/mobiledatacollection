@@ -63,15 +63,15 @@ function googleTranslateElementInit() {
               <li><a href="materials/presentations/mobilegps/">Smartphone & GPS Basics</a></li>
               <li><a href="materials/presentations/caerusgeo/">CaerusGeo</a></li>
               <li class="nav-header">Walkthroughs</li>
-              <li><a href="materials/walkthroughs/Mobile_Phone_Setup.pdf">Mobile Phone Setup</a></li>
-              <li><a href="materials/walkthroughs/Mobile_Phone_Management.pdf">Mobile Phone Management</a></li>
-              <li><a href="materials/walkthroughs/fulcrumonline.pdf">Fulcrum Online</a></li>
-              <li><a href="materials/walkthroughs/fulcrumapp.pdf">Fulcrum App</a></li>
-              <li><a href="materials/walkthroughs/Fulcrum_Management.pdf">Fulcrum Management</a></li>
-              <li><a href="materials/walkthroughs/caerusgeo.pdf">CaerusGeo</a></li>
-              <li><a href="bluetooth.html">Troubleshoot Bluetooth</a></li>
-              <li><a href="jsontoshp.html">GeoJson to Shapefile</a></li>
-              <li><a href="downloadOSM.html">Download OSM Data</a></li>
+              <li><span><a href="#phoneSetup">Mobile Phone Setup </a>(<a href="materials/walkthroughs/Mobile_Phone_Setup.pdf" target="_blank">PDF</a>)</span></li>
+              <li><span><a href="#phoneManagement">Mobile Phone Management </a>(<a href="materials/walkthroughs/Mobile_Phone_Management.pdf" target="_blank">PDF</a>)</span></li>
+              <li><span><a href="../Guides/Fulcrum">Fulcrum Online </a>(<a href="materials/walkthroughs/fulcrumonline.pdf" target="_blank">PDF</a>)</span></li>
+              <li><span>Collecting Data on Fulcrum Mobile (<a href="materials/walkthroughs/fulcrumapp.pdf" target="_blank">PDF</a>)</span></li>
+              <li><span><a href="#fulcrumManagement">Fulcrum Management </a>(<a href="materials/walkthroughs/Fulcrum_Management.pdf" target="_blank">PDF</a>)</span></li>
+              <li><span><a href="../Guides/CaerusGeo">CaerusGEO </a>(<a href="materials/walkthroughs/caerusgeo.pdf">PDF</a>)</span></li>
+              <li><span><a href="#troubleshootBluetooth">Troubleshoot Bluetooth </a>(<a href="materials/walkthroughs/troublebluetooth.pdf" target="_blank">PDF</a>)</span></li> 
+              <li><span><a href="#geojsonToShapefile">GeoJson to Shapefile </a>(<a href="materials/walkthroughs/geojsontoshape.pdf" target="_blank">PDF</a>)</span></li>
+              <li><span><a href="#downloadOSM">Download OSM Data </a>(<a href="materials/walkthroughs/downloadosm.pdf">PDF</a>)</span></li>
               <li class="nav-header">Apps and Program Links</li>
               <li><a href="http://fulcrumapp.com"><img src="img/url.png" class="logoIcon" />Fulcrum</a></li>
               <li><a href="https://play.google.com/store/apps/details?id=com.spatialnetworks.fulcrum"><img src="img/fulcrum.webp" class="logoIcon" />Fulcrum App</a></li>
@@ -119,9 +119,143 @@ function googleTranslateElementInit() {
             <div class="span6">
               <h2><img src="img/osmlogo.png" class="logoIcon" />Open Street Map</h2>
               <p><a href="http://openstreetmap.com">Open Street Map</a> (OSM) OpenStreetMap is a free worldwide map. The data is free to download and use under its open license. Anyone can contribute to the map. The <a href="http://hot.openstreetmap.org/">Humanitarian Open Street Map Team (HOT)</a> is a major contibutor to basemap data in Haiti and throughout the world.</p>
-            </div><!--/span-->
+            </div><!--/span6-->
           </div><!--/row-->
-        </div><!--/span-->
+
+          <hr style="margin:80px;">
+
+          <div class="row-fluid">
+            <div id="phoneSetup" class="span6">
+              <h2>Mobile Phone Setup</h2>
+              <p>Charge the phone to at last 50% before beginning setup.</p>
+              <p>If your phone is new, go through the standard installation dialogue.</p>
+              <p>Select the language you want and link to the local wireless network.</p>
+              <p>When ready, launch Google Play. If this is your first time using Google Play, it will ask you to create an account. Use the following account:
+                <ul>
+                  <li>Username: amcross.01@gmail.com</li>
+                  <li>Password: amcross01</li>
+                </ul>
+              </p>
+              <p>When logged in, install the following 4 apps:
+                <ol>
+                  <li>Fulcrum</li>
+                  <li>BlueTooth GPS</li>
+                  <li>GPS Essentials</li>
+                  <li>Application Protection</li>
+                </ol>
+              </p>            
+              <p>The apps are used for the following:
+                <ol>
+                  <li>Fulcrum is used for surveying and mobile data collection</li>
+                  <li>BlueTooth GPS is used to connect to external GPS units</li>
+                  <li>GPS Essentials is used to collect GPS points and tracks</li>
+                  <li>Application Protection is used to manage enumerator’s access to apps and the internet </li>
+                </ol>
+              </p>
+              <p>Each app will need to be set up accordingly:
+                <ol>
+                  <li>Fulcrum: Login using the standard enumerator account and sync in the most recent forms.</li>
+                  <li>Bluetooth GPS: Go to the Settings menu, and check “Use Insecure Connection”, Connection Workaround” and “Other Workaround”</li>
+                  <li>GPS Essentials: Go to Settings, and set Waypoint Overwrite Distance to 0.\</li>
+                  <li>Application Protection: Set up a passcode. <em>Use the same passcode for every phone.</em></li>
+                </ol>
+              </p>
+            </div><!--#phoneSetup-->
+            <div id="phoneManagement" class="span6">
+              <h2>Mobile Phone Management</h2>
+                <p>Charge your phone and <em>all</em> spare batteries each night.</p>
+                <p>Label every phone with a number and each battery according to those numbers. So phone 10 would have batteries 10a, 10b, and 10c.</p>
+                <p>Label each GPS with a number. Pair GPS with like-numbered phones.</p>
+                <p>Distribute phones, GPS and batteries in waterproof, zippable plastic bags.</p>
+                <p>Assign each volunteer one phone number for the duration of the training. Maintain a spreadsheet database tracking which volunteers have which phones.</p>
+                <p>Sync your Fulcrum forms at predetermined intervals (e.g. after every night of fieldwork, after every week of fieldwork).</p>
+            </div><!--#phoneManagement-->
+          </div><!--/row-->
+
+          <hr style="margin:40px;">
+
+          <div class="row-fluid">
+            <div id="fulcrumManagement" class="span6">
+              <h2>Fulcrum Management</h2>
+                <p>Make a paper copy of your survey form prior to entering it into Fulcrum. Use this as a guide when entering and a backup in the field in case of severe phone issues.</p>
+                <p>Triple test your form on the phones before sending it out to the field. It needs to be extremely tight: survey design problems likely <b>cannot</b> be corrected during the course of the day.</p>
+                <p>Assign everyone associated with a given baseline to one of the 5 Fulcrum accounts you maintain and provide them the appropriate login details.</p>
+                <p>Assign surveys and offline maps to appropriate accounts ahead of time.</p>
+                <p>Make all surveys that you don’t want seen inactive or unassigned to the appropriate accounts.</p>                
+            </div><!--#fulcrumManagement-->
+            <div id="troubleshootBluetooth" class="span6">
+              <h2>Troubleshooting Bluetooth</h2>
+                <p>Tips for troubleshooting the bluetooth GPS and moble phone connection.</p>
+                  <ol>
+                    <li>Check to make sure the GPS is on</li>
+                    <li>Check to make sure the GPS is connected to satellites
+                      <ul><li>Is the green light solid? If it’s blinking, go to an open space and wait for the green light to turn solid</li></ul>
+                    </li>
+                    <li>Check to  make  sure  the GPS is  connected in  Bluetooth GPS
+                      <ul>
+                        <li>If not, find an internet connection and logout/login to Fulcrum</li>
+                        <li>If you have no internet connection, skip to the next step</li>
+                      </ul>
+                    </li>
+                    <li>Restart your phone
+                      <ul>
+                        <li>Your GPS will remain paired. Reconnect using the Bluetooth GPS app</li>
+                        <li>If you can’t connect with the Bluetooth GPS, set aside the GPS for now</li>
+                      </ul>
+                    </li>
+                    <li>Use your paper printout to mark where your survey is taking place</li>
+                  </ol>
+            </div><!--#troubleshootBluetooth-->
+          </div><!--/row-->
+
+          <hr style="margin:40px;">
+
+          <div class="row-fluid">
+            <div id="geojsonToShapefile" class="span6">
+              <h2>GeoJson to Shapefile</h2>
+              <p>Tips for converting geojson to shapefile</p>
+              <ol>
+                <li>Download and install a text editor such as <a href="http://notepad-plus-plus.org/" target="_blank">Notepad++</a></li>
+                <li>Open your GeoJson in Notepad++</li>
+                <li>Copy the text that appears</li>
+                <li>Go to <a href="http://ogre.adc4gis.com/" target="_blank">ogr2ogr web client</a></li>
+                <li>On the right side you’ll see an option for “Convert from GeoJson”</li>
+                <li>Paste the text in the “GEOJSON” text space</li>
+                <li>Give your file a name in the “Output Name” text space</li>
+                <li>Click “Convert to Shapefile”</li>
+                <li>Your file will download to  your Downloads folder</li>
+              </ol>
+            </div><!--#geojsonToShapefile-->
+            <div id="downloadOSM" class="span6">
+              <h2>Download OSM Data</h2>
+              <p>Tips for downloading data from <a href="http://hot-export-new.geofabrik.de/" target="_blank">HOT Exports</a>.</p>
+              <ol>
+                <li>Go to <a href="http://hot-export-new.geofabrik.de/" target="_blank">HOT Exports</a> and login
+                <ul>
+                 <li>If you don’t have an account already, create one</li>
+                </ul>
+                </li>
+                <li>Create a New Job, or use one you’ve already created
+                  <ul>
+                    <li>Name your job</li>
+                    <li>Give it a description that makes sense to others</li>
+                    <li>Zoom into the area of the map that you want to download</li>
+                    <li>Click “Select Area” and draw a box around the area you want to download data from<sup>*</sup><br /><small>Careful: If you select a giant area, you may overload the server. Do big downloads in pieces, if necessary</small></li>
+                    <li>Click “Save”</li>
+                  </ul>
+                </li>
+                <li>If you want to filter information, select the appropriate preset file from “Select Preset File"</li>
+                <li>If you don’t know what this means or don’t want to filter information, click “Save”
+                </li>
+                <li>Wait for the server to process your export</li>
+                <li>When the export is ready, you should see 8 different types of files you can download under “Runs”
+                <ul><li>Select the file type you want. Usually this will be “ESRI Shapefile”</li></ul></li>
+                <li>The data will download as a ZIP file</li>
+                <li>Extract the data from the ZIP file. You will have a separate shapefile for the points, lines, polygons, and roads. You can now use this data in desktop GIS software like <a href="http://hub.qgis.org/projects/quantum-gis/wiki/Download" target="_blank">QGIS</a></li>
+              </ol>
+            </div><!--#downloadOSM-->     
+          </div><!--/row-->  
+        </div><!--/span9-->
       </div><!--/row-->
 
       <hr>
