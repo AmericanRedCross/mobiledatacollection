@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="google-translate-customization" content="dd5207c171a5d11a-29d1c9c17ff34632-g6f9aa177fdeafd13-1a"></meta>
+
+	<title>Mobile Data Collection</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/redcross.css" id="theme">
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+	<script>
+	document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+	</script>
+	<style>
+	h3.answer {
+		color:#ca0020;
+		font-style:italic;
+	}
+	li.answer {
+		color:#ca0020;
+		font-style:italic;
+	}
+	em.answer {
+		color:#ca0020;
+		font-style:italic;
+	}
+	</style>
+</head>
+
+<body>
+	<div id="google_translate_element"><a href="http://redcross.org"><img style="float:right;padding:5px;height:45px;" src="images/redcross-logo.png"></a></div><script type="text/javascript">
+	function googleTranslateElementInit() {
+		new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT}, 'google_translate_element');
+	}
+	</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>ODK Question Types</h1>
+			</section>
+			<section>
+				<h2>XLSForm supports a number of simple question types</h2>
+			</section>
+			<section>
+				<h1>Integer</h1>
+				<aside class="notes">whole numbers</aside>
+			</section>
+			<section>
+				<h3>How many people live this household (e.g. eat out of same pot)? </h3>
+				<h3 class="answer">1024</h3>
+			</section>
+			<section>
+				<h1>Decimal input</h1>
+				<aside class="notes">This is not a typical input</aside>
+			</section>
+			<section>
+				<h3>What is your weight in Kilograms</h3>
+				<h3 class="answer">68.038 kg</h3>
+			</section>
+			<section>
+				<h1>Text</h1>
+			</section>
+			<section>
+				<h3>What is your first name?</h3>
+				<h3 class="answer">First Name</h3>
+			</section>
+			<section>
+				<h1>select_one options</h1>
+				<h2>Multiple choice question; only <em style="color:#ca0020;">one</em> answer can be selected</h2>
+			</section>
+			<section>
+				<h3>What is the age of the head of the household?</h3>
+				<ul>
+					<li>Under 18 </li>
+					<li class="answer">18-35 </li>
+					<li>36-50</li>
+					<li>Over 50</li>
+				</ul>
+			</section>
+			<section>
+				<h1>select_multiple options</h1>
+				<h2>Multiple choice question; <em style="color:#ca0020;">multiple</em> answers can be selected</h2>
+			</section>
+			<section>
+				<h3>Where do you obtain the water you drink daily?</h3>
+				<ul>
+					<li>borehole/handpump</li>
+					<li class="answer">communal tap / stand tap</li>
+					<li>private/household tap</li>
+					<li class="answer">shallow well/protected</li>
+					<li>protected spring source</li>
+					<li>other</li>
+				</ul>
+			</section>
+			<section>
+				<h1>Note</h1>
+				<h3><em class="answer">does not</em> allow input, used to give instructions/reminders to enumerators</h3>
+			</section>
+			<section>
+				<h3>Introduce yourself and identify that you are from the Red Cross</h3>
+			</section>
+			<section>
+				<h1>Geopoint</h1>
+				<h3>Collect GPS coordinates</h3>
+				<aside class="notes">essential for mapping the survey later</aside>
+			</section>
+			<section>
+				<h1>Date input</h1>
+				<h3>day, month, and/or year</h3>
+			</section>
+			<section>
+				<h3>When did you last visit a doctor?</h3>
+				<h3 class="answer">03/13/12</h3>
+			</section>
+			<section>
+				<h1>Time input</h1>
+				<h3><em class="answer">specific</em> time</h3>
+			</section>
+			<section>
+				<h3>what time do you usually get home from work?</h3>
+				<h3 class="answer">12:30 PM</h3>
+			</section>
+			<section>
+				<h1>Image</h1>
+				<h3>allows image capture</h3>
+			</section>
+			<section>
+				<h3>Take a picture of the latrine.</h3>
+			</section>
+			<section>
+				<h1>Barcode </h1>
+				<h2><em class="answer">requires</em> the <a href="https://play.google.com/store/apps/details?id=com.google.zxing.client.android&hl=en">barcode scanner</a> app to be installed</h2>
+			</section>
+			<section>
+				<h3>Scan the household number</h3>
+			</section>
+			<section>
+				<h1>Signature</h1>
+			</section>
+			<section>
+				<h3>Get a person's signture for agreement</h3>
+			</section>
+			<section>
+				<h1>Draw</h1>
+				<h2>Allows you to sketch a drawing with your finger on the mobile device screen</h2>
+			</section>
+			<section>
+				<h1>Dichotomous</h1>
+				<h2>The dichotomous question is generally a "yes/no" question</h2>
+			</section>
+			<section>
+				<h3>Do you treat your drinking water?</h3>
+				<ul>
+					<li>Yes</li>
+					<li class="answer">No</li>
+				</ul>
+			</section>
+			<section>
+				<h1>Rating Scale/Level of Measurement</h1>
+				<h2>Whan you select a single rating for the question along an equally spaced continuum of possible choices</h2>
+			</section>
+			<section>
+				<h3>How much do you agree or disagree with the following statements?</h3>
+				<h3>People in this community feel like they belong to the community. (chose one)</h3>
+				<ul>
+					<li class="answer">strongly disagree</li>
+					<li>disagree</li>
+					<li>neither agree or disagree</li>
+					<li>agree</li>
+					<li>strongly agree</li>
+				</ul>
+			</section>
+			<section>
+				<h1>Filter or Contingency Questions</h1>
+				<h2>sometimes called <em class="answer">skip logic</em></h2>
+			</section>
+			<section>
+				<h3>Does your source of drinking water change according to different seasons?</h3>
+				<ul>
+					<li class="answer">Yes</li>
+					<li>No</li>
+				</ul>
+				<h3>If Yes, when?</h3>
+				<ul>
+					<li class="answer">dry season</li>
+					<li>rainy season</li>
+					<li>other</li>
+				</ul>
+			</section>
+			<section>
+				<h1>Constraint Checks</h1>
+				<aside class="notes"></aside>
+				<h4>One way to ensure data quality is to add constraints to the data fields in your form.</h4>
+			</section>
+			<section>
+				<h3>Admin Areas</h3>
+	      <h4>(conditional ‘select one’ questions)</h4>
+			</section>
+			<section>
+				<h3>How many days a week?</h3>
+				<h3>0, <em class="answer">three</em>, 5, <em class="answer">8</em> </h3>
+	      <h4>(integer answer, only allow >=0 and <=7)</h4>
+			</section>
+		</div>
+	</div>
+
+	<script src="js/lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		center: true,
+		// rtl: true,
+
+		transition: 'linear',
+		// transitionSpeed: 'slow',
+		// backgroundTransition: 'linear'
+	});
+
+	</script>
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-42245094-3', 'americanredcross.github.io');
+	ga('send', 'pageview');
+
+	</script>
+</body>
+</html>

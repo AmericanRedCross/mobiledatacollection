@@ -1,3 +1,7 @@
+# Custom #
+###################
+
+
 # Compiled source #
 ###################
 *.com
@@ -38,9 +42,8 @@ ehthumbs.db
 Thumbs.db
 .cache
 .project
-.settings
-.tmproj
-*.esproj
-nbproject
+
+# Project Files #
+#####################
 *.sublime-project
 *.sublime-workspace
