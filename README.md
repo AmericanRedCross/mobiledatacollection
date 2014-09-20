@@ -33,3 +33,4 @@ Mobile Data Collection Training Agenda
   - *Practice concepts and lessons learned during the first two days of training*
   - **Activity**: Practice survey collection and mobile data through a couple of refresher activities
 - Wrap Up
+  - **Activity**: Course Evaluation
